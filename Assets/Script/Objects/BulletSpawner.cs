@@ -12,7 +12,7 @@ public class BulletSpawner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FIxedUpdate()
+    void FixedUpdate()
     {
        objectPooler.SpawnFromPool("Bullet", transform.position, Quaternion.identity);
     }
