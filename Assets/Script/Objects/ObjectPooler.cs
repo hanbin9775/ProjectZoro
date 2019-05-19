@@ -11,15 +11,13 @@ public class ObjectPooler : MonoBehaviour
         public GameObject prefab; // pool에 넣을 prefab
         public int size;    // total size of Pool
     }
-
-    #region Singleton
+    
     public static ObjectPooler Instance;
 
     private void Awake()
     {
         Instance = this;
     }
-    #endregion
 
     // Pool이 들어갈 list
     public List<Pool> pools; 
